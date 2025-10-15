@@ -1,0 +1,23 @@
+apiVersion:
+kind:
+metadata:
+  name: myapp
+  labels:
+    app:myapp
+    type: front-end
+spec:
+  template:
+    metadata:
+      name: nginx
+      labels:
+        app: nginx
+        tier: frontend
+        app: app
+        tier: app tier
+    spec:
+      containers:
+      -  name: nginx
+         image: nginx url
+      -  name: busybox
+         image: busybox url
+  replicas: 3

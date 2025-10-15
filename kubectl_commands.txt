@@ -1,0 +1,34 @@
+To Apply
+kubectl apply <filename>
+
+To get pods
+kubectl get pods
+
+With more detail
+Kubectl get pods -o wide
+
+To get more details
+kubectl describe pod <podname>
+
+To delete
+Kubectl delete pod <podname>
+
+To create a new pod
+Kubectl run nginx --image=nginx
+
+To create replication controller
+KUbectl create -f <replication definition.yml>
+
+
+To scale replicas
+Kubectl scale --replicas=6 -f replicaset.yml
+Kubectl scale --replicas=6 replicates my app-replicase
+
+To delete deployment and pods
+Kubectl delete replicates my app-replicaset
+
+To replace:
+Kubectl replace -f replicaset-definition.yml
+
+To edit definition
+Kubectl edit replicaset myapp-replicaset
