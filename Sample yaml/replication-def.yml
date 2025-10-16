@@ -3,7 +3,7 @@ kind:
 metadata:
   name: myapp
   labels:
-    app:myapp
+    app: myapp
     type: front-end
 spec:
   template:
@@ -12,8 +12,7 @@ spec:
       labels:
         app: nginx
         tier: frontend
-        app: app
-        tier: app tier
+
     spec:
       containers:
       -  name: nginx
